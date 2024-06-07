@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Northwind Grocery</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/carousel.css">
+</head>
+
+<body>
+    <header class="brown-bg">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid brown-bg">
+              <!-- Logo -->
+              <a class="navbar-brand" href="index.html">
+                <img id="treeLogo" src="https://i.pinimg.com/originals/4e/c5/f3/4ec5f364e61c41d918afdfed1561ddf5.png" 
+                alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Northwind Grocery
+              </a>
+              
+              <!-- Toggler/collapsibe Button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <!-- Navbar links -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="productsearch.html">Products</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <!--This is the code for the tabs-->
+      <div class="carousel-indicators">
+         <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+         <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+         <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <!--code for the content in the carousel-->
+      <div class="carousel-inner">
+         <div class="carousel-item active c-item">
+            <img src="https://static01.nyt.com/images/2018/08/01/dining/01Grocery1-alpha/01Grocery1-superJumbo-v2.jpg">
+            <div class="carousel-caption top-0 mt-4">
+               <p class="mt-5 fs-3 text-uppercase">Welcome to the national</p>
+               <h1 class="display-1 fw-bolder text-capitalize">Parks and Mountain Web Page</h1>
+               <form style="display: inline" action="/index.html" method="get"><button class="btn btn-primary px-4 py-2 fs-5 mt-5">Click to explore</button></form>
+            </div>
+         </div>
+         <div class="carousel-item c-item">
+            <img src="https://c.ndtvimg.com/2022-11/2c92b5t_grocery-store_625x300_14_November_22.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350?im=FaceCrop,algorithm=dnn,width=1200,height=886">
+            <div class="carousel-caption top-0 mt-4">
+               <p class="text-uppercase fs-3 mt-5">Explore what nature has to offer</p>
+               <p class="display-1 fw-bolder text-capitalize">Right outside your front door</p>
+               <form style="display: inline" action="/nationalParks.html" method="get"><button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                  data-bs-target="#booking-modal">Locate Nearby Parks</button></form>
+            </div>
+         </div>
+         <div class="carousel-item c-item">
+            <img src="https://retailinsider.b-cdn.net/wp-content/uploads/2020/03/shutterstock_373602469.jpg">
+            <div class="carousel-caption top-0 mt-4">
+               <p class="text-uppercase fs-3 mt-5">Or would you like to more beyond your backyard?</p>
+               <p class="display-1 fw-bolder text-capitalize">Discover more out there</p>
+               <form style="display: inline" action="/nationalMountains.html" method="get"><button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                  data-bs-target="#booking-modal">Locate Far Off Mountains</button></form>
+            </div>
+         </div>
+      </div>
+      <!--This code is for the arrowheads that can go forward or back-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+      </button>
+   </div>
+
+       
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
